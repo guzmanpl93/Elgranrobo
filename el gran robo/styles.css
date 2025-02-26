@@ -1,0 +1,169 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928DAB);
+    color: #f4f4f4;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo de la cabecera */
+header {
+    background-color: #1c1b28;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #FFC107;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Secciones */
+section {
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de la sección "descripción" */
+#descripcion {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#descripcion h2, #descripcion h3 {
+    color: #FFC107;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#descripcion ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#descripcion ul li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#descripcion ul li:hover {
+    background: rgba(255, 193, 7, 0.3);
+}
+
+/* Imagen en la descripción */
+.imagen-juego {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: 3px solid #FFC107;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo del equipo */
+#equipo .miembro {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+#equipo img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+    border: 3px solid #FFC107;
+}
+
+/* Imagen decorativa */
+.imagen-decorativa img {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* Imagen dentro de la descripción */
+.imagen-juego {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Botones de enlaces importantes */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    background: #FFC107;
+    color: #1c1b28;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #FF5722;
+}
+
+/* Estilo del footer */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1c1b28;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+
