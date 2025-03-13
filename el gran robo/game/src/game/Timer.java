@@ -4,10 +4,10 @@ public class Timer {
 	public static int turno;
 	public static int noche;
 	//getters y setters
-	public void avanzarTurno() {
+	public static void avanzarTurno() {
 		turno++;
 	}
-	public void avanzarNoche() {
+	public static void avanzarNoche() {
 		noche++;
 	}
 	//metodos

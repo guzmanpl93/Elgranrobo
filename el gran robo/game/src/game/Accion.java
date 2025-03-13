@@ -23,7 +23,7 @@ public class Accion {
 	 * 1. Moverse
 	 * 2. Objeto
 	 * 3. Robar (si es posible)
-	 * 4. Pirarse (Finalizar noche)
+	 * 4. Marcharse (Finalizar noche)
 	 */
 	
 	//Estas clases internas están de factorias de objetos
