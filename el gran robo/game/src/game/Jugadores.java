@@ -8,7 +8,7 @@ public class Jugadores {
 	private int Id_Equipo;
 	private String Nombre;
 	private String Rol;
-
+	
 	//getters y setters
 	
 	public String getNombre() {
