@@ -8,6 +8,7 @@ public class Robo extends Equipo {
 	/*
 	- Robo extends equipo -> Esto es por los puntos; al robar, se quitan puntos del equipo y 
 	  se le suman al jugador que roba (explicado mejor en accion)
+	- Se podría robar varias vezes
 	- Los puntos no bajan de 0, el factor de robo base es de 1/1 (1 punto ganado por 1 robado)
 	- Podria hacer que el factor de robo incremente por cada ronda, y hacer que la final sea 
 	  muy efectivo (de 1/1 a 5/1, por ejemplo)

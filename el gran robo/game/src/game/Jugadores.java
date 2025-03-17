@@ -7,7 +7,7 @@ public class Jugadores {
 	private int Id_Jugador;
 	private int Id_Equipo;
 	private String Nombre;
-	private String Rol;
+	private Roles Rol;
 	
 	//getters y setters
 	
@@ -19,11 +19,11 @@ public class Jugadores {
 		Nombre = nombre;
 	}
 	
-	public String getRol() {
+	public Roles getRol() {
 		return Rol;
 	}
 	
-	public void setRol(String rol) {
+	public void setRol(Roles rol) {
 		Rol = rol;
 	}
 	

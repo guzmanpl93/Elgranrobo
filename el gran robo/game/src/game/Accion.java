@@ -26,18 +26,68 @@ public class Accion {
 	 * 4. Marcharse (Finalizar noche)
 	 */
 	
+	public void usar(Objetos o) {
+		if (!(o.getUsos()==0)) {
+			o.setUsos(o.getUsos()-1);
+			activar(o);
+		}
+	}
+	
+	public Objetos elegirObjeto(Jugadores j, int i) {
+		return j.getRol() == Roles.CACO ? new ObjetosC(i) : new ObjetosP(i);
+	}
+	
+	public void activar(Objetos o) {
+		o.getNombre();
+	}
+	
 	//Estas clases internas están de factorias de objetos
-	public class objetosP extends Objetos {
-		//Objetos de Poli: linterna (mejor visibilidad?)...
-		public objetosP() {
+	public class ObjetosP extends Objetos {
+		//Objetos de Poli: linterna (mejor visibilidad?), sistema de aviso (el ladron solo puede robar 1 vez)
+		//radar (indica en que direccion esta el ladron, pero no la distancia entre ellos)...
+		public ObjetosP(int i) {
+				switch (i) {
+					default: {
+						this.nombre = "Linterna";
+						this.recarga= 2;
+						this.usos = 2;
+					} break;
+					case 2: {
+						this.nombre = "Sistema de aviso";
+						this.recarga= 4;
+						this.usos = 1;
+					} break;
+					case 3 : {
+						this.nombre = "Radar";
+						this.recarga=3;
+						this.usos = 1;
+					} break;
+				}
 			
 		}
 	}
 	
-	public class objetosL extends Objetos {
-		//Objetos de ladrón: Bebida energetica (movimiento mejorada), scanner(dice donde esta el guardia)...
-		public objetosL() {
-			
+	public class ObjetosC extends Objetos {
+		//Objetos de ladrón: Bebida energetica (movimiento mejorada), scanner(dice la proximidad del guardia, pero no su ubicacion),
+		//Ganzua (roba más puntos)...
+		public ObjetosC(int i) {
+			switch (i) {
+				default: {
+					this.nombre = "Refresco";
+					this.recarga= 3;
+					this.usos = 2;
+				} break;
+				case 2: {
+					this.nombre = "Scanner";
+					this.recarga= 5;
+					this.usos = 1;
+				} break;
+				case 3 : {
+					this.nombre = "Ganzua";
+					this.recarga= 5;
+					this.usos = 1;
+				} break;
+		}
 		}
 	
 	}
