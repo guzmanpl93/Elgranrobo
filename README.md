@@ -1,6 +1,6 @@
 Creado por Javier Urcera Valbuena, Guzmán Prieto Llamas y Andrea Milena Vega Mora.
 
-Link de trello: https://trello.com/b/xGsIl4XSç
+Link de trello: https://trello.com/b/xGsIl4XS/el-gran-robo
 
 Descripción del juego:
 # 🎮 **El Gran Robo**  
