@@ -1,4 +1,5 @@
 package Game;
+
 import java.awt.*;
 import javax.swing.*;
 
@@ -109,6 +110,7 @@ public class Menu extends JFrame {
         setVisible(false); // Oculta la ventana principal mientras las reglas están abiertas
     }
 }
+
 class Reglas extends JFrame {
 
     public Reglas(JFrame parent) {
@@ -118,55 +120,71 @@ class Reglas extends JFrame {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setResizable(false);
 
-        JPanel panelFondo = new JPanel(new BorderLayout());
+        JPanel panelFondo = new JPanel(new BorderLayout(0, 0)); // Sin espacio adicional
         panelFondo.setBackground(Color.decode("#d69afb"));
 
-        JLabel reglasLabel = new JLabel();
-        reglasLabel.setText("<html>"
-                + "<h1 style='font-size:28px; color:darkblue;'>El Gran Robo - Reglas y Mecánicas del Juego</h1>"
-                + "<p style='font-size:18px;'>"
-                + "📌 <strong>Descripción del Proyecto</strong><br>"
-                + "El Gran Robo es un juego por equipos donde cada equipo debe infiltrarse en la base rival para robar información,<br> mientras protege su propia base de los espías enemigos. "
-                + "La estrategia y el sigilo son clave para la victoria."
-                + "</p>"
-                + "<h2 style='font-size:24px; color:darkred;'>🔹 Cómo Funciona</h2>"
-                + "<p style='font-size:18px;'>"
-                + "👉 <strong>Equipos:</strong> Cada equipo tiene seis roles principales:<br>"
-                + "🔹 <strong>Espías:</strong> Intentan infiltrarse en la base enemiga sin ser descubiertos.<br>"
-                + "🔹 <strong>Guardias:</strong> Defienden la base y tratan de detectar a los espías rivales."
-                + "</p>"
-                + "<h2 style='font-size:24px; color:darkred;'>🎲 Movimientos en el Tablero</h2>"
-                + "<p style='font-size:18px;'>"
-                + "📌 <strong>Estructura:</strong> El tablero es un laberinto o mazmorra con caminos, obstáculos y áreas seguras.<br>"
-                + " 🔹 <strong>Espías:</strong> Se mueven estratégicamente para llegar a la base enemiga sin ser detectados.<br>"
-                + " 🔹 <strong>Guardias:</strong> Tienen visión limitada y solo detectan espías en su rango cercano."
-                + "</p>"
-                + "<h2 style='font-size:24px; color:darkred;'>🏆 Cómo Se Gana</h2>"
-                + "<p style='font-size:18px;'>"
-                + "🥇 <strong>Gana el equipo</strong> que robe más información en un número limitado de turnos.<br>"
-                + "❌ También pueden ganar si logran impedir que el equipo rival robe información."
-                + "</p>"
-                + "</html>");
+        // Panel para el contenido sin relleno adicional
+        JPanel panelCentral = new JPanel(new BorderLayout());
+        panelCentral.setOpaque(false);
 
-     // Botón Volver
-      ImageIcon iconoVolver = new ImageIcon("imagenes/atras.png");
-      Image img = iconoVolver.getImage().getScaledInstance(40, 40, Image.SCALE_SMOOTH);
-      JButton botonVolver = new JButton(new ImageIcon(img));
-      botonVolver.setPreferredSize(new Dimension(50, 50));
-      botonVolver.setBorderPainted(false);
-      botonVolver.setContentAreaFilled(false);
-      botonVolver.setFocusPainted(false);
-      botonVolver.addActionListener(e -> {
-          dispose();
-          parent.setVisible(true);
-      });
+        JLabel reglasLabel = new JLabel("<html>"
+              + "<div style='text-align:center;'>"
+              + "<h1 style='font-size:30px; color:blue; margin-bottom:10px;'>El Gran Robo - Reglas y Mecánicas del Juego</h1>"
+              + "<p style='font-size:24px; text-align:justify; color:0272fa;'>"
+              + "📌 <strong>Descripción del Proyecto</strong><br></p>"
+              + "<<p style='font-size:20px; text-align:justify;'>El Gran Robo es un juego por equipos donde cada equipo debe infiltrarse en la base rival para robar información,<br>"
+              + "mientras protege su propia base de los espías enemigos. La estrategia y el sigilo son clave para la victoria."
+              + "</p>"
+              + "<h2 style='font-size:24px; color:0272fa;'>🔹 Cómo Funciona</h2>"
+              + "<p style='font-size:20px; text-align:justify;'>"
+              + "👉 <strong>Equipos:</strong> Cada equipo tiene seis roles principales:<br>"
+              + "🔹 <strong>Espías:</strong> Intentan infiltrarse en la base enemiga sin ser descubiertos.<br>"
+              + "🔹 <strong>Guardias:</strong> Defienden la base y tratan de detectar a los espías rivales.<br>"
+              + "📍 <strong>Turnos y roles:</strong> Los roles cambian cada turno, lo que obliga a los jugadores a planear tanto ofensiva como defensivamente."
+              + "</p>"
+              + "<h2 style='font-size:24px; color:0272fa;'>🎲 Movimientos en el Tablero</h2>"
+              + "<p style='font-size:20px; text-align:justify;'>"
+              + "📌 <strong>Estructura:</strong> El tablero es un laberinto o mazmorra con caminos, obstáculos y áreas seguras.<br>"
+              + "🔹 <strong>Espías:</strong> Se mueven estratégicamente para llegar a la base enemiga sin ser detectados.<br>"
+              + "🔹 <strong>Guardias:</strong> Tienen visión limitada y solo detectan espías en su rango cercano."
+              + "</p>"
+              + "<h2 style='font-size:24px; color:0272fa;'>🎭 Acciones Especiales</h2>"
+              + "<p style='font-size:20px; text-align:justify;'>"
+              + "🕵️ <strong>Espías:</strong><br>"
+              + "✅ Pueden usar gadgets como disfraces, humo o llaves maestras para evitar ser descubiertos.<br>"
+              + "🚔 <strong>Guardias:</strong><br>"
+              + "✅ Pueden colocar trampas para retrasar o detener a los espías."
+              + "</p>"
+              + "<h2 style='font-size:24px; color:0272fa;'>🏆 Cómo Se Gana</h2>"
+              + "<p style='font-size:20px; text-align:justify;'>"
+              + "🥇 <strong>Gana el equipo</strong> que robe más información en un número limitado de turnos.<br>"
+              + "❌ También pueden ganar si logran impedir que el equipo rival robe información."
+              + "</p>"
+              + "</div></html>");
+        reglasLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
-        JPanel panelBoton = new JPanel(new FlowLayout(FlowLayout.LEFT));
+        panelCentral.add(reglasLabel, BorderLayout.NORTH);
+
+        // Botón Volver optimizado
+        ImageIcon iconoVolver = new ImageIcon("imagenes/atras.png");
+        Image img = iconoVolver.getImage().getScaledInstance(40, 40, Image.SCALE_SMOOTH);
+        JButton botonVolver = new JButton(new ImageIcon(img));
+        botonVolver.setPreferredSize(new Dimension(50, 50));
+        botonVolver.setBorderPainted(false);
+        botonVolver.setContentAreaFilled(false);
+        botonVolver.setFocusPainted(false);
+        botonVolver.addActionListener(e -> {
+            dispose();
+            parent.setVisible(true);
+        });
+
+        // Ajustar margen y evitar espacio adicional
+        JPanel panelBoton = new JPanel(new FlowLayout(FlowLayout.LEFT, 0, 0));
         panelBoton.add(botonVolver);
         panelBoton.setOpaque(false);
 
         panelFondo.add(panelBoton, BorderLayout.NORTH);
-        panelFondo.add(reglasLabel, BorderLayout.CENTER);
+        panelFondo.add(panelCentral, BorderLayout.CENTER);
 
         setContentPane(panelFondo);
     }
