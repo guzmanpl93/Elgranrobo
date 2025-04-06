@@ -18,12 +18,12 @@ public class Equipo {
     }
 
     // Crear y añadir espías al equipo
-    public void agregarEspia(String nombre, String rol, int vida, int ataque, String[] ataques) {
+    public void agregarEspia(String nombre, tipoRol rol, int vida, int ataque, String[] ataques) {
         personajes.add(new Rol(nombre, rol, vida, ataque, ataques));
     }
 
     // Crear y añadir guardias al equipo
-    public void agregarGuardia(String nombre, String rol, int vida, int ataque, String[] ataques) {
+    public void agregarGuardia(String nombre, tipoRol rol, int vida, int ataque, String[] ataques) {
         personajes.add(new Rol(nombre, rol, vida, ataque, ataques));
     }
 

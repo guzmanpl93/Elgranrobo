@@ -2,20 +2,20 @@ package Game;
 
 public class Rol {
 	private String nombre;
-    private String rol;  // Líder, Miembro, Estratégico
+    private tipoRol rol;  // Líder, Miembro, Estratégico
     private int vida;
     private int vidaActual;
     private int ataque;
     private String[] ataques;
 
     // Constructor
-    public Rol(String nombre, String rol, int vida, int ataque, String[] ataques) {
+    public Rol(String nombre, tipoRol rol, int vida, int ataque, String[] ataques) {
         this.nombre = nombre;
         this.rol = rol;
         this.vida = vida;
         this.vidaActual = vida;  // Inicializamos vida actual con el valor total de vida
         this.ataque = ataque;
-        this.ataques = ataques;
+        this.ataques = ataques; // G: Estoy asumiendo de que ataque es el gastado y ataques es el maximp, así que trabajare usando eso.
     }
 
     // Método para obtener la información del personaje
@@ -49,11 +49,11 @@ public class Rol {
         this.nombre = nombre;
     }
 
-    public String getRol() {
+    public tipoRol getRol() {
         return rol;
     }
 
-    public void setRol(String rol) {
+    public void setRol(tipoRol rol) {
         this.rol = rol;
     }
 
@@ -88,5 +88,4 @@ public class Rol {
     public void setAtaques(String[] ataques) {
         this.ataques = ataques;
     }
-
 }
