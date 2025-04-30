@@ -122,12 +122,13 @@ public class Jugar extends JFrame {
     private void empezarJuego() {
         if (equipos.size() < 3) {
             JOptionPane.showMessageDialog(this, "Debe haber al menos 3 equipos para comenzar.");
-            return;
-        }
-
+//            return;
+        } else {
+        
         // Crear una nueva instancia de Partida con los equipos seleccionados
-//        new Partida(equipos).setVisible(true);
+        new Partida(equipos).setVisible(true);
         dispose(); // Cerrar la ventana actual después de abrir la partida
+        }
     }
 
 //    private void empezarJuego() {
