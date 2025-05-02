@@ -4392,3 +4392,190 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 19:18:01.754
 !MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/Games/src/Game/ConexionBD.java
+
+!ENTRY org.eclipse.core.resources 2 2 2025-05-02 19:20:01.430
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-05-02 19:20:01.430
+!MESSAGE The project description file (.project) for 'prueba' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 19:22:30.355
+!MESSAGE [Info] Document is null for editor: ConexionBD.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 19:22:30.356
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/prueba/src/prueba/ConexionBD.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 19:22:30.398
+!MESSAGE [Info] Document is null for editor: Partida.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 19:22:30.399
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/prueba/src/prueba/Partida.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 19:22:30.442
+!MESSAGE [Info] Document is null for editor: Combate.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 19:22:30.442
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/prueba/src/prueba/Combate.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 19:22:30.486
+!MESSAGE [Info] Document is null for editor: Clasificacion.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 19:22:30.486
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/prueba/src/prueba/Clasificacion.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 19:22:30.549
+!MESSAGE [Info] Document is null for editor: Save.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 19:22:30.549
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/prueba/src/prueba/Save.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 19:23:32.081
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 19:23:32.094
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-02 19:23:33.185
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.276.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-02 19:23:33.820
+!MESSAGE [Info]	[certificates] Removed 11 expired certificates
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 19:23:38.436
+!MESSAGE [Info] Document is null for editor: Menu.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 19:23:38.436
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/prueba/src/prueba/Menu.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 19:23:53.436
+!MESSAGE [Info] Document is null for editor: Menu.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 19:23:53.436
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/Games/src/Game/Menu.java
+!SESSION 2025-05-02 21:27:22.280 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=23
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/andy/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/andy/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-02 21:27:25.024
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-05-02 21:27:25.221
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.29.0 (1965) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-02 21:27:30.359
+!MESSAGE Logback config file: /Users/andy/Desktop/repositorio/Elgranrobo/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:27:35.743
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:27:35.753
+!MESSAGE [Info] Proxies are disabled
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:27:35.753
+!MESSAGE [Info] No proxy data found
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:27:35.763
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-02 21:27:37.155
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.276.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-02 21:27:37.851
+!MESSAGE [Info]	[certificates] Removed 11 expired certificates
+
+!ENTRY org.eclipse.ui 2 2 2025-05-02 21:27:42.602
+!MESSAGE Invalid preference category path: org.eclipse.wst.server.ui.preferencePage (bundle: org.eclipse.m2e.wtp.overlay.ui, page: org.eclipse.m2e.wtp.overlay.ui.preferences.OverlayPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-02 21:27:42.603
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.core, page: org.jkiss.dbeaver.preferences.main.toolbar.customization)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-02 21:27:42.603
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.core, page: org.jkiss.dbeaver.preferences.accessibility)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-02 21:27:42.603
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.ui.app.eclipse, page: org.jkiss.dbeaver.preferences.main.notifications)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-02 21:27:42.603
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.ui.app.eclipse, page: org.jkiss.dbeaver.preferences.main.misc)
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:35:53.683
+!MESSAGE [Info] Document is null for editor: Menu.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:35:53.684
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/Games/src/Game/Menu.java
+!SESSION 2025-05-02 21:37:50.227 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=23
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/andy/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/andy/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-02 21:37:53.788
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-05-02 21:37:54.009
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.29.0 (1965) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-02 21:37:57.588
+!MESSAGE Logback config file: /Users/andy/Desktop/repositorio/Elgranrobo/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:38:04.414
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:38:04.427
+!MESSAGE [Info] Proxies are disabled
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:38:04.427
+!MESSAGE [Info] No proxy data found
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:38:04.436
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-02 21:38:06.186
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.276.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-02 21:38:07.071
+!MESSAGE [Info]	[certificates] Removed 11 expired certificates
+
+!ENTRY org.eclipse.ui 2 2 2025-05-02 21:38:10.909
+!MESSAGE Invalid preference category path: org.eclipse.wst.server.ui.preferencePage (bundle: org.eclipse.m2e.wtp.overlay.ui, page: org.eclipse.m2e.wtp.overlay.ui.preferences.OverlayPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-02 21:38:10.909
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.core, page: org.jkiss.dbeaver.preferences.main.toolbar.customization)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-02 21:38:10.909
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.core, page: org.jkiss.dbeaver.preferences.accessibility)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-02 21:38:10.909
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.ui.app.eclipse, page: org.jkiss.dbeaver.preferences.main.notifications)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-02 21:38:10.910
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.ui.app.eclipse, page: org.jkiss.dbeaver.preferences.main.misc)
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:42:27.943
+!MESSAGE [Info] Document is null for editor: Menu.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:42:27.944
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/Games/src/Game/Menu.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:46:15.258
+!MESSAGE [Info] Document is null for editor: ConexionBD.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:46:15.259
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/prueba/src/prueba/ConexionBD.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:46:16.313
+!MESSAGE [Info] Document is null for editor: Menu.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:46:16.313
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/prueba/src/prueba/Menu.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:46:25.873
+!MESSAGE [Info] Document is null for editor: ConexionBD.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:46:25.873
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/Games/src/Game/ConexionBD.java

@@ -21,11 +21,23 @@
 			<item value="org.eclipse.wb/org.eclipse.wb.swing"/>
 		</list>
 		<section name="NewWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="90"/>
+			<item key="DIALOG_Y_ORIGIN" value="47"/>
+			<item key="DIALOG_WIDTH" value="586"/>
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 		</section>
 	</section>
 	<section name="EditorSelectionDialog">
 		<item key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION" value=".java"/>
 		<item key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL" value="false"/>
 		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="org.jkiss.dbeaver.ui.editors.sql.SQLEditor"/>
+	</section>
+	<section name="WorkbenchPreferenceDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="329"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="703"/>
+		<item key="DIALOG_HEIGHT" value="574"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 </section>
