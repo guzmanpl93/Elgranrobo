@@ -1,47 +1,34 @@
 package Game;
 
-import java.awt.EventQueue;
+import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-
 public class Partida extends JFrame {
+    public Partida(ArrayList<String> equipos) {
+        setTitle("Partida - El Gran Robo");
+        setSize(1360, 740);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
 
-	private static final long serialVersionUID = 1L;
-	private JPanel contentPane;
+        JPanel fondo = new JPanel() {
+            protected void paintComponent(Graphics g) {
+                Image img = new ImageIcon("imagenes/mazmorra.png").getImage();
+                g.drawImage(img, 0, 0, getWidth(), getHeight(), this);
+            }
+        };
+        fondo.setLayout(new FlowLayout());
+        fondo.setOpaque(false);
+        
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Partida frame = new Partida();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
+        JButton botonCombate = new JButton("Iniciar Combate");
+        botonCombate.addActionListener(e -> {
+            new Combate(equipos).setVisible(true);
+            dispose();
+        });
 
-	/**
-	 * Create the frame.
-	 */
-	public Partida() {
-		this(new ArrayList<String>());
-	}
-	
-	public Partida(ArrayList<String> equipos) {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-
-		setContentPane(contentPane);
-	}
-
+        fondo.add(botonCombate);
+        setContentPane(fondo);
+    }
 }
+

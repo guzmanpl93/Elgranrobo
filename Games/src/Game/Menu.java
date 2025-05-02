@@ -14,12 +14,13 @@ public class Menu extends JFrame {
     }
 
     public Menu() {
+//    	marco del menu
         setTitle("El Gran Robo");
         setSize(1500, 1024);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
-
+//        imagen del marco de menu
         JPanel panelFondo = new JPanel() {
             private Image fondo = new ImageIcon("imagenes/ElGranRobo.png").getImage();
 
