@@ -49,7 +49,6 @@ public class Menu extends JFrame {
         //Ver las partidas anteriores y cargarlas
         JButton load = crearBoton("LOAD");
         load.addActionListener(e -> {
-        	dispose();
 	        new CargarPartida().setVisible(true);
 	    });
         
