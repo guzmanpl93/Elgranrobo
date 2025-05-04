@@ -34,17 +34,26 @@ public class Menu extends JFrame {
 
         JPanel panelBotones = new JPanel(new GridBagLayout());
         panelBotones.setOpaque(false);
-
+        
+        //Lleva a la seleccion de equipos
         JButton jugar = crearBoton("JUGAR");
         jugar.addActionListener(e -> {
             dispose();
             new Jugar().setVisible(true);
         });
-
+        
+        //Ver las reglas
         JButton reglas = crearBoton("REGLAS");
         reglas.addActionListener(e -> abrirReglas());
 
+        //Ver las partidas anteriores y cargarlas
         JButton load = crearBoton("LOAD");
+        load.addActionListener(e -> {
+        	dispose();
+	        new CargarPartida().setVisible(true);
+	    });
+        
+        //Salir del juego
         JButton exit = crearBoton("EXIT");
         exit.addActionListener(e -> System.exit(0));
 
@@ -72,6 +81,7 @@ public class Menu extends JFrame {
         setContentPane(panelFondo);
     }
 
+    //Constructor automatico de los botones
     private JButton crearBoton(String texto) {
         JButton boton = new JButton(texto) {
             @Override
@@ -106,6 +116,7 @@ public class Menu extends JFrame {
         return boton;
     }
 
+    //Para abrir y ver las reglas
     private void abrirReglas() {
         new Reglas(this).setVisible(true);
         setVisible(false); // Oculta la ventana principal mientras las reglas están abiertas

@@ -33,35 +33,43 @@ public class Jugar extends JFrame {
         panelFondo.setBackground(null);
         panelFondo.setLayout(null);
 
+        //Empieza el juego
         JButton empezarJuego = crearBotonRedondeado("Empezar Juego", 112, 230, 258, 75);
         empezarJuego.addActionListener(e -> empezarJuego());
         panelFondo.add(empezarJuego);
 
+        //Escribir los nombres de equipo
         JTextField cuadroTexto = new JTextField();
         cuadroTexto.setBounds(621, 520, 223, 30);
         panelFondo.add(cuadroTexto);
 
+        //Elegir si quieres ser un espia o un guardian
         JComboBox<String> comboRoles = new JComboBox<>(new String[]{"Espía", "Guardián"});
         comboRoles.setBounds(611, 448, 245, 51);
         comboRoles.setMaximumRowCount(10);
         comboRoles.setFont(new Font("Arial Black", Font.BOLD, 20));
         panelFondo.add(comboRoles);
 
+        //Seleccion de subrol
         JComboBox<String> comboPersonajes = new JComboBox<>();
         comboPersonajes.setBounds(611, 400, 245, 38);
         comboPersonajes.setFont(new Font("Arial Black", Font.BOLD, 16));
         panelFondo.add(comboPersonajes);
 
+        //Añade los roles de los guardianes y espias
         comboRoles.addActionListener(e -> actualizarComboPersonajes(comboRoles, comboPersonajes));
 
+        //Añade al juego el equipo
         JButton botonAñadirEquipo = crearBotonRedondeado("Añadir Equipo", 614, 310, 245, 62);
         botonAñadirEquipo.addActionListener(e -> añadirEquipo(comboRoles, comboPersonajes, cuadroTexto));
         panelFondo.add(botonAñadirEquipo);
 
+        //Boton de informacion de cada rol
         JButton botonMostrarInfo = crearBotonRedondeado("Info Personajes", 112, 385, 258, 75);
         botonMostrarInfo.addActionListener(e -> abrirInfoPersonajes());
         panelFondo.add(botonMostrarInfo);
 
+        //Boton de regreso al menu
         JButton botonVolverMenu = crearBotonRedondeado("Volver al Menú", 112, 540, 258, 75);
         botonVolverMenu.addActionListener(e -> volverAlMenu());
         panelFondo.add(botonVolverMenu);
@@ -77,6 +85,7 @@ public class Jugar extends JFrame {
         setContentPane(panelFondo);
     }
 
+    //Constructor de lista de roles, para espias y guardianes
     private void actualizarComboPersonajes(JComboBox<String> comboRoles, JComboBox<String> comboPersonajes) {
         String rolSeleccionado = (String) comboRoles.getSelectedItem();
         if (rolSeleccionado != null) {
@@ -92,6 +101,7 @@ public class Jugar extends JFrame {
         }
     }
 
+    //Añade equipos
     private void añadirEquipo(JComboBox<String> comboRoles, JComboBox<String> comboPersonajes, JTextField cuadroTexto) {
         String rolSeleccionado = (String) comboRoles.getSelectedItem();
         String personajeSeleccionado = (String) comboPersonajes.getSelectedItem();
@@ -156,7 +166,7 @@ public class Jugar extends JFrame {
     }
     
     
-
+    //Añade botones de interaccion para diversos objetivos
     private JButton crearBotonRedondeado(String texto, int x, int y, int ancho, int alto) {
         JButton boton = new JButton(texto) {
             @Override
@@ -186,6 +196,7 @@ public class Jugar extends JFrame {
     }
 }
 
+//Pestaña emerjente para mostrar informacion de cada rol
 class InfoPersonajes extends JFrame {
     public InfoPersonajes(JFrame parent) {
         setTitle("Información de Personajes");
