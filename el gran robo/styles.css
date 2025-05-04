@@ -101,7 +101,7 @@ section {
 .imagen-juego {
     display: block;
     width: 100%;
-    max-width: 800px; /* Aumento del tamaño máximo */
+    max-width: 800px; 
     margin: 20px auto;
     border-radius: 8px;
     border: 3px solid #FFC107;
@@ -141,7 +141,7 @@ section {
 
 /* Imagen decorativa */
 .imagen-decorativa img {
-    width: 100%;
+    width: 40%;
     max-width: 800px;
     margin-top: 30px;
     border-radius: 10px;
@@ -156,8 +156,8 @@ section {
 }
 
 #galeria img {
-    width: 400px;  /* Tamaño aumentado */
-    height: 300px; /* Tamaño aumentado */
+    width: 400px;  
+    height: 300px; 
     object-fit: cover;
     border-radius: 8px;
     border: 3px solid #FFC107;
@@ -173,7 +173,7 @@ section {
 /* Galería: imágenes en la documentación */
 #documentacion img {
     width: 100%;
-    max-width: 800px; /* Tamaño máximo aumentado */
+    max-width: 800px; 
     height: auto;
     margin-top: 20px;
     border-radius: 8px;
