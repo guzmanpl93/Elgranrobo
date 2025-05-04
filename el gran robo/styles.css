@@ -101,7 +101,7 @@ section {
 .imagen-juego {
     display: block;
     width: 100%;
-    max-width: 600px;
+    max-width: 800px; /* Aumento del tamaño máximo */
     margin: 20px auto;
     border-radius: 8px;
     border: 3px solid #FFC107;
@@ -124,6 +124,21 @@ section {
     border: 3px solid #FFC107;
 }
 
+/* Descripción del proyecto */
+#proyecto {
+    max-width: 900px; 
+    margin: 50px auto; 
+    text-align: left;
+}
+#proyecto h2 { 
+    color: white; 
+    text-align: center; 
+}
+#proyecto p { 
+    margin-bottom: 15px; 
+    font-size: 1.1rem; }
+
+
 /* Imagen decorativa */
 .imagen-decorativa img {
     width: 100%;
@@ -132,12 +147,44 @@ section {
     border-radius: 10px;
 }
 
-/* Imagen dentro de la descripción */
-.imagen-juego {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px 0;
+/* Galería: imágenes */
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#galeria img {
+    width: 400px;  /* Tamaño aumentado */
+    height: 300px; /* Tamaño aumentado */
+    object-fit: cover;
     border-radius: 8px;
+    border: 3px solid #FFC107;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Galería: imágenes en la documentación */
+#documentacion img {
+    width: 100%;
+    max-width: 800px; /* Tamaño máximo aumentado */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 3px solid #FFC107;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#documentacion img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* Botones de enlaces importantes */
@@ -157,6 +204,7 @@ section {
     background: #FF5722;
 }
 
+
 /* Estilo del footer */
 footer {
     margin-top: 40px;
@@ -165,5 +213,3 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
-
-
