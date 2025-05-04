@@ -4579,3 +4579,183 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-02 21:46:25.873
 !MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/Games/src/Game/ConexionBD.java
+!SESSION 2025-05-04 22:18:37.151 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=23
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/andy/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/andy/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-04 22:18:40.458
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-05-04 22:18:40.666
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.29.0 (1965) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-04 22:18:48.216
+!MESSAGE Logback config file: /Users/andy/Desktop/repositorio/Elgranrobo/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-04 22:18:53.993
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-04 22:18:54.004
+!MESSAGE [Info] Proxies are disabled
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-04 22:18:54.005
+!MESSAGE [Info] No proxy data found
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-04 22:18:54.009
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:18:55.415
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.276.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:18:56.006
+!MESSAGE [Info]	[certificates] Removed 11 expired certificates
+
+!ENTRY org.eclipse.ui 2 2 2025-05-04 22:19:00.455
+!MESSAGE Invalid preference category path: org.eclipse.wst.server.ui.preferencePage (bundle: org.eclipse.m2e.wtp.overlay.ui, page: org.eclipse.m2e.wtp.overlay.ui.preferences.OverlayPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-04 22:19:00.456
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.core, page: org.jkiss.dbeaver.preferences.main.toolbar.customization)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-04 22:19:00.456
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.core, page: org.jkiss.dbeaver.preferences.accessibility)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-04 22:19:00.456
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.ui.app.eclipse, page: org.jkiss.dbeaver.preferences.main.notifications)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-04 22:19:00.457
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.ui.app.eclipse, page: org.jkiss.dbeaver.preferences.main.misc)
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-04 22:19:28.775
+!MESSAGE [Info] Document is null for editor: ConexionBD.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-04 22:19:28.776
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/Games/src/Game/ConexionBD.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-04 22:20:49.778
+!MESSAGE [Info] Java format preference cache for Games is updated. key: org.eclipse.jdt.core.formatter.tabulation.char, new value: tab
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-04 22:20:49.779
+!MESSAGE [Info] Java format preference cache for Games is updated. key: org.eclipse.jdt.core.formatter.tabulation.size, new value: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:20:54.880
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/copilot-codex/completions] took 459.5160460472107 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:20:54.881
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [63862aed-be25-4484-9b30-efbc1c32d75c] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:20:54.881
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:20:55.360
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:20:55.360
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/copilot-codex/completions] took 358.2047539949417 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:20:55.361
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [9dc980f4-bd77-4db3-880f-f16f53918d1e] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:20:55.994
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/copilot-codex/completions] took 202.37006103992462 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:20:55.994
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:20:55.995
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [336b76fd-2f55-481d-8177-2d2c9f3214ae] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:20:56.318
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/copilot-codex/completions] took 202.51473701000214 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:20:56.318
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [1cb02582-d5ea-4d98-8e9e-875acf034b19] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:20:56.319
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:20:56.682
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/copilot-codex/completions] took 246.93892800807953 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:20:56.682
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [2da3b168-dffa-4d42-8fa5-e7869f2cec27] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:20:56.683
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.jdt.ui 4 0 2025-05-04 22:20:58.530
+!MESSAGE OperationCanceledException computing hover information in Menu.java at offset 1567
+!STACK 0
+org.eclipse.core.runtime.OperationCanceledException
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:239)
+	at org.eclipse.jdt.internal.core.ClassFile.getJarBinaryTypeInfo(ClassFile.java:225)
+	at org.eclipse.jdt.internal.core.ClassFile.getBinaryTypeInfo(ClassFile.java:186)
+	at org.eclipse.jdt.internal.core.ClassFile.buildStructure(ClassFile.java:78)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:246)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:127)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:569)
+	at org.eclipse.jdt.internal.core.BinaryType.getElementInfo(BinaryType.java:292)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:278)
+	at org.eclipse.jdt.internal.core.BinaryType.getElementInfo(BinaryType.java:1142)
+	at org.eclipse.jdt.internal.core.BinaryType.getFlags(BinaryType.java:357)
+	at org.eclipse.jdt.internal.core.SearchableEnvironmentRequestor.acceptType(SearchableEnvironmentRequestor.java:127)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypesInBinaryPackage(NameLookup.java:1510)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1442)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1348)
+	at org.eclipse.jdt.internal.core.NameLookup.findAllTypes(NameLookup.java:422)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1418)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1348)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:964)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:766)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:592)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:571)
+	at org.eclipse.jdt.internal.codeassist.SelectionEngine.select(SelectionEngine.java:1048)
+	at org.eclipse.jdt.internal.core.Openable.codeSelect(Openable.java:167)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:471)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:461)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getJavaElementsAt(AbstractJavaEditorTextHover.java:122)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.lambda$0(JavadocHover.java:713)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5694)
+	at org.eclipse.jdt.internal.core.JavaModelManager.callReadOnly(JavaModelManager.java:5683)
+	at org.eclipse.jdt.core.JavaCore.callReadOnly(JavaCore.java:6150)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:713)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:709)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 51 :
+-----
+            dispose();
+            new Jugar().setVisible(true);
+        });
+        
+        //Ver las reglas
+        JButton reglas = crearBoton("REGLAS");
+        reglas.addActionListener(e -> abrirReglas());
+
+        //Ver las partidas anteriores y cargarlas
+        JButton save = crearBoton("S");
+        load.addActionListener(e -|> {
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:150)
+		at org.eclipse.jdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getJavaElementsAt(AbstractJavaEditorTextHover.java:124)
+		... 10 more
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:21:01.809
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:21:01.809
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [c53c5c82-7cc9-48c1-a4dd-6a8dd9d54db1] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-04 22:21:01.810
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/copilot-codex/completions] took 201.73735904693604 ms
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-04 22:21:28.919
+!MESSAGE [Info] Document is null for editor: Menu.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-04 22:21:28.920
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/Games/src/Game/Menu.java

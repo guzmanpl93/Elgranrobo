@@ -47,8 +47,8 @@ public class Menu extends JFrame {
         reglas.addActionListener(e -> abrirReglas());
 
         //Ver las partidas anteriores y cargarlas
-        JButton load = crearBoton("LOAD");
-        load.addActionListener(e -> {
+        JButton save = crearBoton("SAVE");
+        save.addActionListener(e -> {
 	        new CargarPartida().setVisible(true);
 	    });
         
@@ -66,7 +66,7 @@ public class Menu extends JFrame {
         gbcBotones.gridy++;
         panelBotones.add(reglas, gbcBotones);
         gbcBotones.gridy++;
-        panelBotones.add(load, gbcBotones);
+        panelBotones.add(save, gbcBotones);
         gbcBotones.gridy++;
         panelBotones.add(exit, gbcBotones);
 
