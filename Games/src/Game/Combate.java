@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
+import javax.swing.ComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -66,12 +67,12 @@ public class Combate extends JFrame {
         setContentPane(fondo);
     }
 
-    private ArrayList<String> hacerBatalla(JTextArea area, JPanel fondo) {
-    	elegirJugador();
-    	
+    private ArrayList<String> hacerBatalla(JTextArea area, JPanel fondo) {    	
     	Random rand = new Random();
         ArrayList<String> participantes = new ArrayList<>(equipos);
         Map<String, Integer> vidaEquipos = new HashMap<>();
+        
+        elegirJugador(participantes);
 
         for (String eq : participantes)
             vidaEquipos.put(eq, 100 + rand.nextInt(101));
@@ -111,28 +112,41 @@ public class Combate extends JFrame {
         return podio;
     }
     
-    private void elegirJugador() { //G: Intente crear un metodo que permita elegir el equipo con el que se quiere jugar
-    	JTextArea areaT = new JTextArea();
+    private void elegirJugador(ArrayList<String> participantes) { //G: Intente crear un metodo que permita elegir el equipo con el que se quiere jugar
+    	String [] contenido = new String[participantes.size()];
+    	for (int i =0; i< participantes.size(); i++)
+    		contenido[i] = participantes.get(i);
+    	
     	JDialog ventana = new JDialog(this, "Elegir equipo", true);
+    	
         ventana.setLayout(new BorderLayout());
-        ventana.add(areaT);
         ventana.setSize(200, 250);
+        
+        //Esto añade los equipos, el elegido es con el cual se juega
+        JComboBox<String> options = new JComboBox<String>(contenido);
+        ventana.add(options);
+        
+        JTextArea space = new JTextArea();
+        space.setEditable(false);
+        space.setFont(new Font("Monospaced", Font.PLAIN, 14));
+        space.append("Elija con que equipo quieres luchar; el resto seran todos máquinas");
+        ventana.add(space);
+        
         ventana.setLocationRelativeTo(this);
         ventana.setVisible(true);
-
-        areaT.append("Elija su equipo\n");	
-        JTextArea infoEquipos = null;
+        
+        
             
-        verEquipos(infoEquipos);
+//        verEquipos(infoEquipos);
 	}
-
-    private void verEquipos(JTextArea infoEquipos) {
-        StringBuilder lista = new StringBuilder("Equipos añadidos:\n");
-        for (String equipo : equipos) {
-            lista.append(equipo).append("\n");
-        }
-        infoEquipos.setText(lista.toString());
-    }
+//
+//    private void verEquipos(JTextArea infoEquipos) {
+//        StringBuilder lista = new StringBuilder("Equipos añadidos:\n");
+//        for (String equipo : equipos) {
+//            lista.append(equipo).append("\n");
+//        }
+//        infoEquipos.setText(lista.toString());
+//    }
     
 	private ArrayList<String> simularBatalla(JTextArea area, JPanel fondo) {
         Random rand = new Random();
