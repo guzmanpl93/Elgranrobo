@@ -10,7 +10,8 @@ import java.util.ArrayList;
 public class Clasificacion extends JFrame {
     public Clasificacion(ArrayList<String> podio) {
         setTitle("Clasificación Final");
-        setSize(1500, 900);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
+//        setSize(1500, 900);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);

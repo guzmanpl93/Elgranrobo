@@ -7,7 +7,8 @@ import java.util.ArrayList;
 public class Save extends JFrame {
     public Save() {
         setTitle("Jugadores Registrados");
-        setSize(600, 500);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
+//        setSize(600, 500);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 

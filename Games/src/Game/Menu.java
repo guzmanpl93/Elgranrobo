@@ -16,7 +16,8 @@ public class Menu extends JFrame {
     public Menu() {
 //    	marco del menu
         setTitle("El Gran Robo");
-        setSize(1500, 900);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
+//        setSize(1500, 900);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);

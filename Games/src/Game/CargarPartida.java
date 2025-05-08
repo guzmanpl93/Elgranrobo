@@ -9,7 +9,8 @@ import Game.Menu;
 public class CargarPartida extends JFrame {
     public CargarPartida() {
         setTitle("Cargar Partida");
-        setSize(600, 400);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
+//        setSize(600, 400);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         JPanel botones = new JPanel();

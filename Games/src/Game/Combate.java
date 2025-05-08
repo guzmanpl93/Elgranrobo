@@ -14,7 +14,8 @@ public class Combate extends JFrame {
     public Combate(ArrayList<String> equiposOriginales) {
         this.equipos = new ArrayList<>(equiposOriginales);
         setTitle("Simulación de Combate");
-        setSize(1500, 900);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
+//        setSize(1500, 900);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
 

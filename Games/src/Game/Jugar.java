@@ -12,7 +12,8 @@ public class Jugar extends JFrame {
 
     public Jugar() {
         setTitle("El Gran Robo - Jugar");
-        setSize(1500, 900);
+//        setSize(1500, 900);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false); 
