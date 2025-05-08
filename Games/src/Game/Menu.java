@@ -16,8 +16,8 @@ public class Menu extends JFrame {
     public Menu() {
 //    	marco del menu
         setTitle("El Gran Robo");
-        setSize(1500, 1024);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(1500, 900);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
 //        imagen del marco de menu
@@ -126,7 +126,7 @@ class Reglas extends JFrame {
 
     public Reglas(JFrame parent) {
         setTitle("Reglas del Juego");
-        setSize(1500, 1024);
+        setSize(1500, 900);
         setLocationRelativeTo(parent);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setResizable(false);

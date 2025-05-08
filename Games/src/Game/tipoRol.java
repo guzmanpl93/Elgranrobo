@@ -8,7 +8,9 @@ public enum tipoRol {
 	*/
 	//Atributos
 	fantasma("El Fantasma"), hacker("El Hacker"), sombra("La Sombra"), disfraz("El Maestro del Disfraz"),
-	acrobata("El Acróbata"), saboteador("El Saboteador"), corredor("El Corredor");
+	acrobata("El Acróbata"), saboteador("El Saboteador"), corredor("El Corredor"), centinela( "El Centinela") ,
+	rastreador( "El Rastreador"), perro("El Perro Guardián"), cazador( "El Cazador"), seguridad( "El Experto en Seguridad"),
+	francotirador( "El Francotirador"), patrullero( "El Patrullero");
 	private String valor;
 	private Random rand= new Random();
 

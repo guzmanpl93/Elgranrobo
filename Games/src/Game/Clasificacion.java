@@ -10,17 +10,28 @@ import java.util.ArrayList;
 public class Clasificacion extends JFrame {
     public Clasificacion(ArrayList<String> podio) {
         setTitle("Clasificación Final");
-        setSize(800, 600);
+        setSize(1500, 900);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
+        setResizable(false);
 
-        JPanel fondo = new JPanel() {
+        JPanel panelFondo = new JPanel() {
+        	private Image fondo = new ImageIcon("imagenes/podio.png").getImage();
+        	@Override
             protected void paintComponent(Graphics g) {
-                Image img = new ImageIcon("imagenes/podio.png").getImage();
-                g.drawImage(img, 0, 0, getWidth(), getHeight(), this);
+                super.paintComponent(g);
+                g.drawImage(fondo, 0, 0, getWidth(), getHeight(), this);
             }
         };
-        fondo.setLayout(new BorderLayout());
+        panelFondo.setBackground(null);
+        panelFondo.setLayout(null);
+//        JPanel fondo = new JPanel() {
+//            protected void paintComponent(Graphics g) {
+//                Image img = new ImageIcon("imagenes/podio.png").getImage();
+//                g.drawImage(img, 0, 0, getWidth(), getHeight(), this);
+//            }
+//        };
+//        fondo.setLayout(new BorderLayout());
  
 
         JTextArea area = new JTextArea("🏆 Podio:\n\n");
@@ -57,9 +68,9 @@ public class Clasificacion extends JFrame {
         botones.add(btnGuardar);
         botones.add(btnMenu);
 
-        fondo.add(new JScrollPane(area), BorderLayout.CENTER);
-        fondo.add(botones, BorderLayout.SOUTH);
+        panelFondo.add(new JScrollPane(area), BorderLayout.CENTER);
+        panelFondo.add(botones, BorderLayout.SOUTH);
 
-        setContentPane(fondo);
+        setContentPane(panelFondo);
     }
 }

@@ -7,18 +7,23 @@ import java.util.ArrayList;
 public class Partida extends JFrame {
     public Partida(ArrayList<String> equipos) {
         setTitle("Partida - El Gran Robo");
-        setSize(1360, 740);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(1500, 900);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
+        setResizable(false);
 
         JPanel fondo = new JPanel() {
+        	private Image fondo = new ImageIcon("imagenes/mazmorra.png").getImage();
+        	@Override
             protected void paintComponent(Graphics g) {
-                Image img = new ImageIcon("imagenes/mazmorra.png").getImage();
-                g.drawImage(img, 0, 0, getWidth(), getHeight(), this);
+                super.paintComponent(g);
+                g.drawImage(fondo, 0, 0, getWidth(), getHeight(), this);
             }
         };
-        fondo.setLayout(new FlowLayout());
-        fondo.setOpaque(false);
+        fondo.setBackground(null);
+        fondo.setLayout(null);
+//        panelFondo.setLayout(new FlowLayout());
+//        panelFondo.setOpaque(false);
         
 
         JButton botonCombate = new JButton("Iniciar Combate");

@@ -6,15 +6,14 @@ import java.util.ArrayList;
 import javax.swing.*;
 
 public class Jugar extends JFrame {
-    private static final long serialVersionUID = 1L;
 
     private ArrayList<String> equipos;
     private JTextArea infoEquipos;
 
     public Jugar() {
         setTitle("El Gran Robo - Jugar");
-        setSize(1500, 1024);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(1500, 900);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false); 
         getContentPane().setLayout(null);
@@ -202,7 +201,7 @@ class InfoPersonajes extends JFrame {
         setTitle("Información de Personajes");
         setSize(1500, 1024);
         setLocationRelativeTo(parent);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setResizable(false);
 
         // Crear panel con color de fondo (morado pálido)
@@ -222,21 +221,21 @@ class InfoPersonajes extends JFrame {
         panelPersonajes.setOpaque(false);  // Transparente para que se vea el color de fondo
 
      // Agregamos personajes con sus descripciones completas
-      agregarPersonaje(panelPersonajes, "El Fantasma", "Puede volverse invisible por un turno, eludiendo así la detección de los guardias. \n200 puntos de vida. \n 50 misiles por ronda.", "espias/fantasma.jpg");
-      agregarPersonaje(panelPersonajes, "El Hacker", "Especializado en desactivar trampas y abrir puertas electrónicas, facilitando el paso de los espías. \n200 puntos de vida. \n 50 misiles por ronda.", "espias/hacker.jpg");
-      agregarPersonaje(panelPersonajes, "La Sombra", "Es capaz de moverse dos casillas sin ser detectada, gracias a su sigilo y rapidez. \n200 puntos de vida.\n 50 misiles por ronda. \nAtaca el doble al verde (x2).\n ataca la mitad al azul (/2).", "espias/sombra.jpg");
-      agregarPersonaje(panelPersonajes, "El Maestro del Disfraz", "Puede hacerse pasar por un guardia, engañando a otros sin ser identificado. \n200 puntos de vida.\n 50 misiles por ronda. Ataca el doble al rojo (x2).\n ataca la mitad al verde (/2).", "espias/disfraz.jpg");
-      agregarPersonaje(panelPersonajes, "El Acróbata", "Habilidad para saltar obstáculos sin ser ralentizado, permitiendo moverse rápidamente. \n200 puntos de vida.\n 50 misiles por ronda.\n Ataca el doble al azul (x2).\n ataca la mitad al rojo (/2).", "espias/acrobata.jpg");
-      agregarPersonaje(panelPersonajes, "El Saboteador", "Coloca trampas falsas que pueden confundir a los guardias, alterando su estrategia. \n400 puntos de vida.\n empieza con 10 misiles y aumenta 2 por ronda.", "espias/saboteador.jpg");
-      agregarPersonaje(panelPersonajes, "El Corredor", "Gana un movimiento extra en su turno, permitiendo alcanzar áreas distantes con rapidez. \n100 puntos de vida.\n probabilidad de esquivar del 50%.", "espias/corredor.jpg");
+      agregarPersonaje(panelPersonajes, "El Fantasma", "Puede volverse invisible por un turno, eludiendo así la detección de los guardias. \n200 puntos de vida. \n 50 misiles por ronda.", "personajes/espias/fantasma.jpg");
+      agregarPersonaje(panelPersonajes, "El Hacker", "Especializado en desactivar trampas y abrir puertas electrónicas, facilitando el paso de los espías. \n200 puntos de vida. \n 50 misiles por ronda.", "personajes/espias/hacker.jpg");
+      agregarPersonaje(panelPersonajes, "La Sombra", "Es capaz de moverse dos casillas sin ser detectada, gracias a su sigilo y rapidez. \n200 puntos de vida.\n 50 misiles por ronda. \nAtaca el doble al verde (x2).\n ataca la mitad al azul (/2).", "personajes/espias/sombra.jpg");
+      agregarPersonaje(panelPersonajes, "El Maestro del Disfraz", "Puede hacerse pasar por un guardia, engañando a otros sin ser identificado. \n200 puntos de vida.\n 50 misiles por ronda. Ataca el doble al rojo (x2).\n ataca la mitad al verde (/2).", "personajes/espias/disfraz.jpg");
+      agregarPersonaje(panelPersonajes, "El Acróbata", "Habilidad para saltar obstáculos sin ser ralentizado, permitiendo moverse rápidamente. \n200 puntos de vida.\n 50 misiles por ronda.\n Ataca el doble al azul (x2).\n ataca la mitad al rojo (/2).", "personajes/espias/acrobata.jpg");
+      agregarPersonaje(panelPersonajes, "El Saboteador", "Coloca trampas falsas que pueden confundir a los guardias, alterando su estrategia. \n400 puntos de vida.\n empieza con 10 misiles y aumenta 2 por ronda.", "personajes/espias/saboteador.jpg");
+      agregarPersonaje(panelPersonajes, "El Corredor", "Gana un movimiento extra en su turno, permitiendo alcanzar áreas distantes con rapidez. \n100 puntos de vida.\n probabilidad de esquivar del 50%.", "personajes/espias/corredor.jpg");
 
-      agregarPersonaje(panelPersonajes, "El Centinela", "Posee un rango de visión más amplio, lo que le permite detectar a los espías con mayor facilidad. \n200 puntos de vida.\n 50 misiles por ronda.", "guardias/centinela.jpg");
-      agregarPersonaje(panelPersonajes, "El Rastreador", "Capaz de ver las huellas dejadas por los espías, lo que le ayuda a rastrear su ubicación. \n200 puntos de vida.\n 50 misiles por ronda.\n Ataca el doble al verde (x2).\n Ataca la mitad al azul (/2).", "guardias/rastreador.jpg");
-      agregarPersonaje(panelPersonajes, "El Perro Guardián", "Puede moverse dos veces en un turno, cubriendo una mayor área de forma más eficiente. \n200 puntos de vida.\n 50 misiles por ronda. Ataca el doble al rojo (x2),\nAtaca la mitad al verde (/2).", "guardias/perro.jpg");
-      agregarPersonaje(panelPersonajes, "El Cazador", "Lanza una red para atrapar a los espías, inmovilizándolos temporalmente. 200 puntos de vida, 50 misiles por ronda. Ataca el doble al azul (x2)\n Ataca la mitad al rojo (/2).", "guardias/cazador.jpg");
-      agregarPersonaje(panelPersonajes, "El Experto en Seguridad", "Coloca trampas en el camino de los espías, haciéndoles la vida más difícil. \n400 puntos de vida.\n Empieza con 10 misiles y aumenta 2 por ronda.", "guardias/seguridad.jpg");
-      agregarPersonaje(panelPersonajes, "El Francotirador", "Elimina a un espía a distancia con un disparo certero, sin necesidad de acercarse. \n100 puntos de vida. \nProbabilidad de esquivar del 50%.", "guardias/francotirador.jpg");
-      agregarPersonaje(panelPersonajes, "El Patrullero", "Tiene la capacidad de cambiar de posición con otro guardia, alterando la estrategia enemiga. \n200 puntos de vida.\n 50 misiles por ronda.", "guardias/patrullero.jpg");
+      agregarPersonaje(panelPersonajes, "El Centinela", "Posee un rango de visión más amplio, lo que le permite detectar a los espías con mayor facilidad. \n200 puntos de vida.\n 50 misiles por ronda.", "personajes/guardias/centinela.jpg");
+      agregarPersonaje(panelPersonajes, "El Rastreador", "Capaz de ver las huellas dejadas por los espías, lo que le ayuda a rastrear su ubicación. \n200 puntos de vida.\n 50 misiles por ronda.\n Ataca el doble al verde (x2).\n Ataca la mitad al azul (/2).", "personajes/guardias/rastreador.jpg");
+      agregarPersonaje(panelPersonajes, "El Perro Guardián", "Puede moverse dos veces en un turno, cubriendo una mayor área de forma más eficiente. \n200 puntos de vida.\n 50 misiles por ronda. Ataca el doble al rojo (x2),\nAtaca la mitad al verde (/2).", "personajes/guardias/perro.jpg");
+      agregarPersonaje(panelPersonajes, "El Cazador", "Lanza una red para atrapar a los espías, inmovilizándolos temporalmente. 200 puntos de vida, 50 misiles por ronda. Ataca el doble al azul (x2)\n Ataca la mitad al rojo (/2).", "personajes/guardias/cazador.jpg");
+      agregarPersonaje(panelPersonajes, "El Experto en Seguridad", "Coloca trampas en el camino de los espías, haciéndoles la vida más difícil. \n400 puntos de vida.\n Empieza con 10 misiles y aumenta 2 por ronda.", "personajes/guardias/seguridad.jpg");
+      agregarPersonaje(panelPersonajes, "El Francotirador", "Elimina a un espía a distancia con un disparo certero, sin necesidad de acercarse. \n100 puntos de vida. \nProbabilidad de esquivar del 50%.", "personajes/guardias/francotirador.jpg");
+      agregarPersonaje(panelPersonajes, "El Patrullero", "Tiene la capacidad de cambiar de posición con otro guardia, alterando la estrategia enemiga. \n200 puntos de vida.\n 50 misiles por ronda.", "personajes/guardias/patrullero.jpg");
 
         ImageIcon iconoVolver = new ImageIcon("imagenes/atras.png");
         Image img = iconoVolver.getImage().getScaledInstance(40, 40, Image.SCALE_SMOOTH);
