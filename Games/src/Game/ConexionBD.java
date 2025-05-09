@@ -7,7 +7,7 @@ import java.util.List;
 
 // CREAR CONEXION CAON LA BASE DE DATOS
 public class ConexionBD {
-    private static final String URL = "jdbc:mysql://localhost:3306/";
+    private static final String URL = "jdbc:mysql://localhost:3306/juego_robo";
     private static final String USUARIO = "root";
     private static final String CONTRASEÑA = "";
 

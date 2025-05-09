@@ -1,39 +1,21 @@
 package Game;
 
-import javax.swing.*;
 import java.awt.*;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.ArrayList;
+
+import javax.swing.*;
 
 public class Clasificacion extends JFrame {
     public Clasificacion(ArrayList<String> podio) {
         setTitle("Clasificación Final");
         setExtendedState(JFrame.MAXIMIZED_BOTH);
-//        setSize(1500, 900);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
 
-        JPanel panelFondo = new JPanel() {
-        	private Image fondo = new ImageIcon("imagenes/podio.png").getImage();
-        	@Override
-            protected void paintComponent(Graphics g) {
-                super.paintComponent(g);
-                g.drawImage(fondo, 0, 0, getWidth(), getHeight(), this);
-            }
-        };
-        panelFondo.setBackground(null);
-        panelFondo.setLayout(null);
-//        JPanel fondo = new JPanel() {
-//            protected void paintComponent(Graphics g) {
-//                Image img = new ImageIcon("imagenes/podio.png").getImage();
-//                g.drawImage(img, 0, 0, getWidth(), getHeight(), this);
-//            }
-//        };
-//        fondo.setLayout(new BorderLayout());
- 
+        Background fondo = new Background("imagenes/podio2.png");
+        fondo.setLayout(new BorderLayout()); // ✅ usa BorderLayout en lugar de null
+        setContentPane(fondo);
 
         JTextArea area = new JTextArea("🏆 Podio:\n\n");
         String[] medallas = {"🥇", "🥈", "🥉"};
@@ -44,23 +26,33 @@ public class Clasificacion extends JFrame {
         area.setFont(new Font("Arial", Font.BOLD, 20));
         area.setOpaque(false);
         area.setEditable(false);
+        area.setForeground(Color.WHITE); // Mejor visibilidad en fondo
 
+        JScrollPane scroll = new JScrollPane(area);
+        scroll.setOpaque(false);
+        scroll.getViewport().setOpaque(false);
+        scroll.setBorder(null); // Opcional
+
+        fondo.add(scroll, BorderLayout.CENTER);
+
+        // ==== BOTONES ====
         JPanel botones = new JPanel();
         botones.setOpaque(false);
 
-//        JButton btnGuardar = new JButton(new ImageIcon("imagenes/save.png"));
         ImageIcon iconoOriginal = new ImageIcon("imagenes/save.png");
         Image imagenEscalada = iconoOriginal.getImage().getScaledInstance(30, 30, Image.SCALE_SMOOTH);
         JButton btnGuardar = new JButton(new ImageIcon(imagenEscalada));
         btnGuardar.setToolTipText("Guardar");
+        btnGuardar.setContentAreaFilled(false);
+        btnGuardar.setBorderPainted(false);
         btnGuardar.addActionListener(e -> ConexionBD.guardarClasificacion(podio));
 
-//        JButton btnMenu = new JButton(new ImageIcon("imagenes/menu.png"));
-//        btnMenu.setToolTipText("Volver al Menú");
         ImageIcon iconoOriginal1 = new ImageIcon("imagenes/menu.png");
-        Image imagenEscalada1 = iconoOriginal1.getImage().getScaledInstance(30, 30, Image.SCALE_SMOOTH); // tamaño deseado
+        Image imagenEscalada1 = iconoOriginal1.getImage().getScaledInstance(30, 30, Image.SCALE_SMOOTH);
         JButton btnMenu = new JButton(new ImageIcon(imagenEscalada1));
-
+        btnMenu.setToolTipText("Volver al Menú");
+        btnMenu.setContentAreaFilled(false);
+        btnMenu.setBorderPainted(false);
         btnMenu.addActionListener(e -> {
             dispose();
             new Menu().setVisible(true);
@@ -68,10 +60,8 @@ public class Clasificacion extends JFrame {
 
         botones.add(btnGuardar);
         botones.add(btnMenu);
+        fondo.add(botones, BorderLayout.SOUTH);
 
-        panelFondo.add(new JScrollPane(area), BorderLayout.CENTER);
-        panelFondo.add(botones, BorderLayout.SOUTH);
-
-        setContentPane(panelFondo);
+        setVisible(true);
     }
 }
