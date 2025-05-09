@@ -1,17 +1,33 @@
 package Game;
 
-import javax.swing.*;
-import java.awt.*;
-import java.util.*;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Image;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 
-public class Combate extends JFrame {
-    private ArrayList<String> equipos;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+public class combateJugador extends JFrame{
+	private ArrayList<String> equipos;
     private Map<String, Integer> vidaEquipos;
     private int ronda;
     private JTextArea combateArea;
     private JPanel fondo;
 
-    public Combate(ArrayList<String> equiposOriginales) {
+    public combateJugador(ArrayList<String> equiposOriginales) {
         this.equipos = new ArrayList<>(equiposOriginales);
         setTitle("Simulación de Combate");
         setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -43,7 +59,7 @@ public class Combate extends JFrame {
         botonSimular.setForeground(Color.BLACK);
         botonSimular.setBounds(100, 620, 200, 40); // Coordenadas manuales
         botonSimular.addActionListener(e -> {
-            ArrayList<String> podio = simularBatalla(combateArea);
+            ArrayList<String> podio = hacerBatalla(combateArea);
             Clasificacion clasificacion = new Clasificacion(podio);
             clasificacion.setVisible(true);
             dispose();
@@ -64,11 +80,14 @@ public class Combate extends JFrame {
         fondo.add(scroll);
         fondo.add(botonSimular);
     }
-    
-    private ArrayList<String> simularBatalla(JTextArea area) {
-        Random rand = new Random();
+	
+	private ArrayList<String> hacerBatalla(JTextArea area) {    	
+    	Random rand = new Random();
         ArrayList<String> participantes = new ArrayList<>(equipos);
         Map<String, Integer> vidaEquipos = new HashMap<>();
+        
+        elegirJugador(participantes);
+
         for (String eq : participantes)
             vidaEquipos.put(eq, 100 + rand.nextInt(101));
 
@@ -95,7 +114,6 @@ public class Combate extends JFrame {
             participantes.removeIf(eq -> vidaEquipos.get(eq) <= 0);
             area.append("----------\n");
         }
-
         ArrayList<Map.Entry<String, Integer>> ordenados = new ArrayList<>(vidaEquipos.entrySet());
         ordenados.removeIf(e -> e.getValue() <= 0);
         ordenados.sort((a, b) -> b.getValue().compareTo(a.getValue()));
@@ -107,6 +125,39 @@ public class Combate extends JFrame {
         return podio;
     }
 
+    private void elegirJugador(ArrayList<String> participantes) { //G: Intente crear un metodo que permita elegir el equipo con el que se quiere jugar
+    	String [] contenido = new String[participantes.size()];
+    	for (int i =0; i< participantes.size(); i++)
+    		contenido[i] = participantes.get(i);
+    	
+    	JDialog ventana = new JDialog(this, "Elegir equipo", true);
+    	JPanel contenedor = new JPanel();
+    	
+        ventana.setLayout(new BorderLayout());
+        
+        
+        //Esto añade los equipos, el elegido es con el cual se juega
+        JComboBox<String> options = new JComboBox<String>(contenido);
+        contenedor.add(options);
+        
+        JTextArea space = new JTextArea();
+        space.setEditable(false);
+        space.setFont(new Font("Monospaced", Font.PLAIN, 14));
+        space.contains(200, 200);
+        space.append("Elija con que equipo quieres luchar;\n el resto seran todos máquinas");
+        contenedor.add(space);
+        ventana.add(contenedor);
+        
+        ventana.setSize(250, 200);
+        
+        ventana.setLocationRelativeTo(this);
+        ventana.setVisible(true);
+        
+        
+            
+//        verEquipos(infoEquipos);
+	}
+	
     private void mostrarImagenPersonaje(JPanel fondo, String nombreEquipo) {
         String personaje = nombreEquipo.split("-")[2].trim().toLowerCase().replace(" ", "");
         ImageIcon icon = new ImageIcon("personajes/" + personaje + ".png");

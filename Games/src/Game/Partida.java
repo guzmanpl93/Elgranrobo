@@ -36,6 +36,20 @@ public class Partida extends JFrame {
             new Combate(equipos).setVisible(true);
             dispose();
         });
+        
+     // Guzmán: Boton para entrar en el modo un jugador (no borrar porfa)
+        JButton botonSolo = new JButton("Un jugador");
+        botonSolo.setFont(new Font("Arial", Font.BOLD, 18));
+        botonSolo.setForeground(Color.WHITE);
+        botonSolo.setBackground(new Color(0, 0, 0, 50)); // semi-transparente
+        botonSolo.setFocusPainted(false);
+        botonSolo.setBounds(centerX - 100, centerY + 60, 200, 60);
+
+        botonSolo.addActionListener(e -> {
+            new combateJugador(equipos).setVisible(true);
+            dispose();
+        });
+        
      // === BOTÓN VOLVER AL MENÚ ===
         ImageIcon iconoMenu = new ImageIcon("imagenes/menu2.png"); // Usa la imagen que subiste
         Image iconoRedimensionado = iconoMenu.getImage().getScaledInstance(40, 40, Image.SCALE_SMOOTH);
@@ -69,7 +83,7 @@ public class Partida extends JFrame {
         fondo.add(botonCombate);
         fondo.add(botonMenu);
         fondo.add(botonSalir);
-
+        fondo.add(botonSolo);
         
         fondo.add(botonCombate);
         setVisible(true);
