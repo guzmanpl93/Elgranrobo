@@ -200,7 +200,7 @@ public class Jugar extends JFrame {
 class InfoPersonajes extends JFrame {
     public InfoPersonajes(JFrame parent) {
         setTitle("Información de Personajes");
-        setSize(1500, 1024);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
         setLocationRelativeTo(parent);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setResizable(false);
@@ -286,7 +286,7 @@ class InfoPersonajes extends JFrame {
         areaDescripcion.setFont(new Font("Arial", Font.PLAIN, 14));
         areaDescripcion.setLineWrap(true);
         areaDescripcion.setWrapStyleWord(true);
-        areaDescripcion.setPreferredSize(new Dimension(600, 100));
+        areaDescripcion.setPreferredSize(new Dimension(500, 100));
 
         // Añadir elementos al panel con diseño de cuadrícula flexible
         gbc.gridx = 0;

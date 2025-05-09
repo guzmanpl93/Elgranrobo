@@ -16,7 +16,7 @@ public class ConexionBD {
 //            return DriverManager.getConnection(URL, USUARIO, CONTRASEÑA);
 //        } catch (SQLException e) {
 //            e.printStackTrace();
-//            return null;
+//            return null; 
 //        }
 //    }
     private static final String NOMBRE_BD = "juego_robo";

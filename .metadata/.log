@@ -9240,3 +9240,194 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-09 02:24:01.477
 !MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/Games/src/Game/ConexionBD.java
+!SESSION 2025-05-09 04:19:13.707 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=23
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/andy/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/andy/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-09 04:19:15.977
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-05-09 04:19:16.162
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.29.0 (1965) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-09 04:19:20.382
+!MESSAGE Logback config file: /Users/andy/Desktop/repositorio/Elgranrobo/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-09 04:19:25.294
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-09 04:19:25.303
+!MESSAGE [Info] Proxies are disabled
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-09 04:19:25.304
+!MESSAGE [Info] No proxy data found
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-09 04:19:25.368
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-09 04:19:26.673
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.276.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-09 04:19:27.235
+!MESSAGE [Info]	[certificates] Removed 11 expired certificates
+
+!ENTRY org.eclipse.ui 2 2 2025-05-09 04:19:32.219
+!MESSAGE Invalid preference category path: org.eclipse.wst.server.ui.preferencePage (bundle: org.eclipse.m2e.wtp.overlay.ui, page: org.eclipse.m2e.wtp.overlay.ui.preferences.OverlayPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-09 04:19:32.220
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.core, page: org.jkiss.dbeaver.preferences.main.toolbar.customization)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-09 04:19:32.220
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.core, page: org.jkiss.dbeaver.preferences.accessibility)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-09 04:19:32.220
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.ui.app.eclipse, page: org.jkiss.dbeaver.preferences.main.notifications)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-09 04:19:32.221
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.ui.app.eclipse, page: org.jkiss.dbeaver.preferences.main.misc)
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-09 04:35:40.390
+!MESSAGE [Info] Document is null for editor: ConexionBD.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-09 04:35:40.391
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/andy/Desktop/repositorio/Elgranrobo/Games/src/Game/ConexionBD.java
+!SESSION 2025-05-09 21:47:48.694 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=23
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/andy/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/andy/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-09 21:47:50.846
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-05-09 21:47:51.039
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.29.0 (1965) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-09 21:48:00.759
+!MESSAGE Logback config file: /Users/andy/Desktop/repositorio/Elgranrobo/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-09 21:48:05.715
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-09 21:48:05.724
+!MESSAGE [Info] Proxies are disabled
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-09 21:48:05.725
+!MESSAGE [Info] No proxy data found
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-09 21:48:05.731
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-09 21:48:07.111
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.276.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-09 21:48:07.656
+!MESSAGE [Info]	[certificates] Removed 11 expired certificates
+
+!ENTRY org.eclipse.ui 2 2 2025-05-09 21:48:13.160
+!MESSAGE Invalid preference category path: org.eclipse.wst.server.ui.preferencePage (bundle: org.eclipse.m2e.wtp.overlay.ui, page: org.eclipse.m2e.wtp.overlay.ui.preferences.OverlayPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-09 21:48:13.160
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.core, page: org.jkiss.dbeaver.preferences.main.toolbar.customization)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-09 21:48:13.161
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.core, page: org.jkiss.dbeaver.preferences.accessibility)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-09 21:48:13.161
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.ui.app.eclipse, page: org.jkiss.dbeaver.preferences.main.notifications)
+
+!ENTRY org.eclipse.ui 2 2 2025-05-09 21:48:13.161
+!MESSAGE Invalid preference category path: org.jkiss.dbeaver.preferences.main (bundle: org.jkiss.dbeaver.ui.app.eclipse, page: org.jkiss.dbeaver.preferences.main.misc)
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-10 01:14:10.786
+!MESSAGE [Info] Java format preference cache for Games is updated. key: org.eclipse.jdt.core.formatter.tabulation.char, new value: tab
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-05-10 01:14:10.787
+!MESSAGE [Info] Java format preference cache for Games is updated. key: org.eclipse.jdt.core.formatter.tabulation.size, new value: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:14:12.102
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/copilot-codex/completions] took 451.0935259759426 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:14:12.103
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [4252bad3-5e27-489a-ad37-5155e0258e06] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:14:12.104
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:18:01.139
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/copilot-codex/completions] took 665.7272220253944 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:18:01.140
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [d64f8336-06b7-4d86-ab54-2fe7a1a57b4e] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:18:01.140
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:18:01.529
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/copilot-codex/completions] took 259.51879301667213 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:18:01.529
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [48ad74cb-6d9a-4a1f-bbac-90e79fa93394] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:18:01.530
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:18:01.952
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/copilot-codex/completions] took 293.51289200782776 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:18:01.952
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [4e9bdb9e-6609-47be-8e09-f0eb79118473] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:18:01.952
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:18:02.465
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:18:02.466
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/copilot-codex/completions] took 388.7433390021324 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:18:02.466
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [fe55f92f-c438-48a7-ab2e-3d3073d1c8d7] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:20:40.363
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/copilot-codex/completions] took 580.0867670178413 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:20:40.363
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [bec413d3-4d4c-461f-8e31-6fcdfbca0753] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:20:40.363
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:22:25.272
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/copilot-codex/completions] took 449.107675999403 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:22:25.273
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [cf015518-ee02-4cdd-97b2-06adc808516d] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:22:25.273
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:22:41.405
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/copilot-codex/completions] took 349.5143399834633 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:22:41.405
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [89f802ad-52e9-4e71-8400-342603d6c71f] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:22:41.405
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:23:27.070
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [e4d617f8-6d20-44dc-a7f6-7e60e863dd85] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:23:27.070
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/copilot-codex/completions] took 422.6399690210819 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-05-10 01:23:27.071
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]

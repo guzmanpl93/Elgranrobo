@@ -127,7 +127,7 @@ class Reglas extends JFrame {
 
     public Reglas(JFrame parent) {
         setTitle("Reglas del Juego");
-        setSize(1500, 900);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
         setLocationRelativeTo(parent);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setResizable(false);
@@ -141,34 +141,34 @@ class Reglas extends JFrame {
 
         JLabel reglasLabel = new JLabel("<html>"
               + "<div style='text-align:center;'>"
-              + "<h1 style='font-size:30px; color:blue; margin-bottom:10px;'>El Gran Robo - Reglas y Mecánicas del Juego</h1>"
-              + "<p style='font-size:24px; text-align:justify; color:0272fa;'>"
+              + "<h1 style='font-size:20px; color:blue; margin-bottom:10px;'>El Gran Robo - Reglas y Mecánicas del Juego</h1>"
+              + "<p style='font-size:15px; text-align:justify; color:0272fa;'>"
               + "📌 <strong>Descripción del Proyecto</strong><br></p>"
-              + "<<p style='font-size:20px; text-align:justify;'>El Gran Robo es un juego por equipos donde cada equipo debe infiltrarse en la base rival para robar información,<br>"
+              + "<p style='font-size:14px; text-align:justify;'>El Gran Robo es un juego por equipos donde cada equipo debe infiltrarse en la base rival para robar información,"
               + "mientras protege su propia base de los espías enemigos. La estrategia y el sigilo son clave para la victoria."
               + "</p>"
-              + "<h2 style='font-size:24px; color:0272fa;'>🔹 Cómo Funciona</h2>"
-              + "<p style='font-size:20px; text-align:justify;'>"
+              + "<h2 style='font-size:15px; color:0272fa;'>🔹 Cómo Funciona</h2>"
+              + "<p style='font-size:14px; text-align:justify;'>"
               + "👉 <strong>Equipos:</strong> Cada equipo tiene seis roles principales:<br>"
               + "🔹 <strong>Espías:</strong> Intentan infiltrarse en la base enemiga sin ser descubiertos.<br>"
               + "🔹 <strong>Guardias:</strong> Defienden la base y tratan de detectar a los espías rivales.<br>"
               + "📍 <strong>Turnos y roles:</strong> Los roles cambian cada turno, lo que obliga a los jugadores a planear tanto ofensiva como defensivamente."
               + "</p>"
-              + "<h2 style='font-size:24px; color:0272fa;'>🎲 Movimientos en el Tablero</h2>"
-              + "<p style='font-size:20px; text-align:justify;'>"
+              + "<h2 style='font-size:15px; color:0272fa;'>🎲 Movimientos en el Tablero</h2>"
+              + "<p style='font-size:14px; text-align:justify;'>"
               + "📌 <strong>Estructura:</strong> El tablero es un laberinto o mazmorra con caminos, obstáculos y áreas seguras.<br>"
               + "🔹 <strong>Espías:</strong> Se mueven estratégicamente para llegar a la base enemiga sin ser detectados.<br>"
               + "🔹 <strong>Guardias:</strong> Tienen visión limitada y solo detectan espías en su rango cercano."
               + "</p>"
-              + "<h2 style='font-size:24px; color:0272fa;'>🎭 Acciones Especiales</h2>"
-              + "<p style='font-size:20px; text-align:justify;'>"
+              + "<h2 style='font-size:15px; color:0272fa;'>🎭 Acciones Especiales</h2>"
+              + "<p style='font-size:14px; text-align:justify;'>"
               + "🕵️ <strong>Espías:</strong><br>"
               + "✅ Pueden usar gadgets como disfraces, humo o llaves maestras para evitar ser descubiertos.<br>"
               + "🚔 <strong>Guardias:</strong><br>"
               + "✅ Pueden colocar trampas para retrasar o detener a los espías."
               + "</p>"
-              + "<h2 style='font-size:24px; color:0272fa;'>🏆 Cómo Se Gana</h2>"
-              + "<p style='font-size:20px; text-align:justify;'>"
+              + "<h2 style='font-size:15px; color:0272fa;'>🏆 Cómo Se Gana</h2>"
+              + "<p style='font-size:14px; text-align:justify;'>"
               + "🥇 <strong>Gana el equipo</strong> que robe más información en un número limitado de turnos.<br>"
               + "❌ También pueden ganar si logran impedir que el equipo rival robe información."
               + "</p>"
